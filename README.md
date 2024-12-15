@@ -40,3 +40,26 @@ ten security alert cycles, afterwards returning to a state of disarm, allowing t
 create a simple security system using methods we have learned during the course of the semester. 
 
 ![Block Diagram](block_diagram.png "This is my Structured Block Diagram")
+
+### Pinout Plan:
+
+| Component              | Microcontroller Pin       | Function        | Purpose                               |
+|------------------------|---------------------------|-----------------|---------------------------------------|
+| Security Input Buttons | PD0-PD3                   | Digital In      | Arming/Disabling Security System      |
+| UltraSonic Sensor      | PC7 (Trigger)             | Digital Out     | Sends out a trigger pulse             |
+| UltraSonic Sensor      | PC5 (Echo)                | Digital In      | Receives pulse for distance           |
+| LCD Display            | PA2-PA5 // PE0 // PC6     | Digital Out     | Data and control for message display  |
+| Alarm/Buzzer (PWM)     | PC4 (PWM0)                | PWM Out         | Controls audio alarm                  |
+| Visual Alarm LEDs      | PB0-PB3                   | Digital Out     | Flashes LED Alarm                     |
+
+### Components Used:
+
+| Item Description                      | Quantity | Manufacturer          |
+|---------------------------------------|----------|-----------------------|
+| Tiva C Series TM4C123G Launchpad      | 1        | Texas Instruments     |
+| EDUbaseboard                          | 1        | Trainer4EDU           |
+| UltraSonic Sensor                     | 1        | N/A                   |
+| LCD Display                           | 1        | Trainer4EDU           |
+| Buzzer                                | 1        | Trainer4EDU           |
+| Breadboard                            | 1        | N/A                   |
+
