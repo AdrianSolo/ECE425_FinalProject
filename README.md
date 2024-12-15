@@ -39,3 +39,4 @@ and a warning will display on the LCD. The system will remain in this alert stat
 ten security alert cycles, afterwards returning to a state of disarm, allowing the user to 
 create a simple security system using methods we have learned during the course of the semester. 
 
+![Block Diagram](block_diagram.png "This is my Structured Block Diagram")
